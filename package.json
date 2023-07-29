@@ -1,5 +1,5 @@
 {
-  "name": "@moyuyc/@tsm",
+  "name": "@moyuyc/tsm",
   "publishConfig": {
     "access": "public"
   },
