@@ -68,7 +68,7 @@ function transform(source: string, options: Options): string {
 function loader(Module: Module, sourcefile: string) {
 	let extn = extname(sourcefile) as Extension;
 
-	let options = config[extn] || {};
+	let options = {...(config[extn] || {})};
 	let pitch = Module._compile!.bind(Module);
 	options.sourcefile = sourcefile;
 
